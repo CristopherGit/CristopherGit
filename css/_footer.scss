@@ -1,0 +1,51 @@
+.footer{
+    background-color: #282828;
+    padding: 1em;
+    .footer__article{
+        &.footer__article--flex{
+            @include flex(row, wrap, none, center, center, 8em);
+        }
+        
+        .footer__redsocial{
+            .footer__nav1{
+                &.footer__nav1--flex{
+                    @include flex(column, wrap, none, none, none, 2em);
+                }
+                i{
+                    cursor: pointer;
+                    img{
+                        width: 3em;
+                        transition: 0.5s;
+                        &:hover{
+                            @include btn(0.5);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__whoweare{
+            .footer__nav2{
+                &.footer__nav2--flex{
+                    @include flex(column, none, none, none, none, 1em);
+                }
+                & > a{
+                    font-size: 2em;
+                    color: $colorWhite;
+                    text-decoration: none;
+                    font-family: $fontFamilyArial;
+                    transition: 0.5s;
+                    &:hover{
+                        @include btn(0.7);
+                    }
+                }
+            }
+        }
+
+        .footer__logo{
+            img{
+                width: 24em;
+            }
+        }
+    }
+}

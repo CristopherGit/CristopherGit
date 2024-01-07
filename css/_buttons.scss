@@ -1,0 +1,4 @@
+@mixin btn($opacity){
+    transition: 0.5s;
+    opacity: $opacity;
+}

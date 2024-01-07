@@ -1,0 +1,19 @@
+$fontFamilyPrincipal:'Denk One', sans-serif;
+$fontFamilyArial: Arial, Helvetica, sans-serif;
+$colorPrincipal: rgb(0,0,0);
+$colorWhite: rgb(255,255,255);
+
+@mixin flex($flexDirectio, $flexWrap, $alignContent, $justifyContent, $alignItems, $gap){
+    display: flex;
+    flex-direction: $flexDirectio;
+    flex-wrap: $flexWrap;
+    align-content: $alignContent;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    gap: $gap;
+};
+
+@mixin set1($fontSize){
+    font-family:'Denk One', sans-serif ;
+    font-size: $fontSize;
+}

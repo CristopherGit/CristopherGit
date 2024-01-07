@@ -1,0 +1,23 @@
+header{
+    .header__article{
+        background-color: $colorPrincipal;
+        .header__nav{
+            &.header__nav--flex{
+                @include flex (row, none, none, none, center, 2em);
+            }
+            img{
+                width: 8em;
+            }
+        
+            a{
+                @include set1(2em);
+                color: $colorWhite;
+                text-decoration: none;
+                transition: 0.5s;
+                &:hover{
+                    @include btn(0.7);
+                }
+            }
+        }
+    }
+}
